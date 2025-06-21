@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html lang="sv">
+   <head>
+     <meta charset="UTF-8" />
+     <title>Marcus Ellnebrand's Krögarkort</title>
+     <link rel="stylesheet" href="/krogarkortet/assets/css/card.css" />
+   </head>
+   <body>
+     <div class="card-container" onclick="flipCard(this)">
+       <div class="card-inner">
+         <div class="card-front">
+           <img src="/krogarkortet/assets/img/gubben.png" class="logo" alt="Logo" />
+           <h1>KRÖGARKORT</h1>
+         </div>
+         <div class="card-back">
+           <h3>Marcus Ellnebrand</h3>
+           <p>031008-xxxx</p> 
+           <div class="row">
+             <div>
+               <strong>Gemenskap</strong>
+               <p>Visby SS25</p> 
+             </div>
+             <div>
+               <strong>Krog</strong>
+               <p>Insert Krog</p> 
+             </div>
+             <img src="/krogarkortet/assets/img/qr-kod.svg" class="qr" alt="QR Code" />
+           </div>
+           <p class="member">Medlem #458</p> 
+           <p class="small">
+             Kortet ger förmåner på krogar i samma gemenskap. <br /><br />
+             Kortet är personligt och får ej överlåtas.
+           </p>
+         </div>
+       </div>
+     </div>
+
+     <script>
+       function flipCard(card) {
+         card.classList.toggle("flipped");
+       }
+     </script>
+   </body>
+ </html>
