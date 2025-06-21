@@ -31,6 +31,7 @@ module Jekyll
       self.data['krog'] = recipient['krog']
       self.data['memberNumber'] = recipient['memberNumber']
       self.data['layout'] = 'card' # Ensure Jekyll processes Liquid in the layout
+      self.data['lang'] = 'sv'
     end
   end
 end
