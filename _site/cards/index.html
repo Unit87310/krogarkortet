@@ -39,23 +39,11 @@
         <h1>List of Cards</h1>
 
 <ul>
-  
+  {% for recipient in site.data.recipients %}
     <li>
-      <a href="/cards/1.html">Alice Smith</a>
+      <a href="{{ site.baseurl }}/cards/{{ recipient.id }}.html">{{ recipient.firstName }} {{ recipient.lastName }}</a>
     </li>
-  
-    <li>
-      <a href="/cards/2.html">Bob Jones</a>
-    </li>
-  
-    <li>
-      <a href="/cards/3.html">Marcus Ellnebrand</a>
-    </li>
-  
-    <li>
-      <a href="/cards/4.html">Alexandra Jordan</a>
-    </li>
-  
+  {% endfor %}
 </ul>
       </div>
     </main><footer class="site-footer h-card">

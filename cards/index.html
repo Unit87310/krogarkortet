@@ -8,7 +8,7 @@ title: All Cards
 <ul>
   {% for recipient in site.data.recipients %}
     <li>
-      <a href="/cards/{{ recipient.id }}.html">{{ recipient.firstName }} {{ recipient.lastName }}</a>
+      <a href="{{ site.baseurl }}/cards/{{ recipient.id }}.html">{{ recipient.firstName }} {{ recipient.lastName }}</a>
     </li>
   {% endfor %}
 </ul>
