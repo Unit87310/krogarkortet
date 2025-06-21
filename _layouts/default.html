@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en' }}">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    {% unless page.layout == "card" %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css" />
+    {% endunless %}
     {% if page.layout == "card" %}
-      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/card.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/card.css" />
     {% endif %}
   </head>
   <body>
-    <header>
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <!-- Add navigation here if you want -->
-    </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer>
-      <!-- Add footer here if you want -->
-    </footer>
+    {{ content }}
   </body>
 </html>
