@@ -1,2 +1,0 @@
-# krogarkortet
-krögarkortet
